@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+    <link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<!--表单
+        1.文本框
+            .form-control  表单元素样式
+            表单控件的大小   .input-lg    .input-sm
+        2.下拉框
+            .form-control  表单元素样式
+            multiple 多选   multiple="multiple"
+        3.文本框
+            .form-control  表单元素样式
+        4.复选框
+            垂直显示 .checkbox
+            水平显示 .checkbox-inline
+        5.单选框
+            垂直显示 .radio
+            水平显示 .radio-inline
+-->
+<div class="container">
+    <input type="text"><br>
+    <select name="" id="">
+        <option value="">请选择城市</option>
+        <option value="">上海</option>
+        <option value="">北京</option>
+    </select><br>
+    <textarea name="" id="" cols="30" rows="10"></textarea><br>
+    <input type="checkbox" name="hobby">唱歌
+    <input type="checkbox" name="hobby">跳舞<br>
+    <input type="radio" name="sex">男
+    <input type="radio" name="sex">女
+
+    <hr>
+    <!--文本框-->
+    <div class="row">
+        <div class="col-md-4">
+            <input type="text" class="form-control"><br>
+            <input type="text" class="form-control input-lg"><br>
+            <input type="text" class="form-control input-sm"><br>
+        </div>
+    </div>
+    <!--下拉框-->
+    <div class="row">
+        <div class="col-md-4">
+            <!--            multiple 多选   multiple="multiple"-->
+            <select class="form-control">
+                <option value="">请选择城市</option>
+                <option value="">上海</option>
+                <option value="">北京</option>
+            </select>
+        </div>
+    </div>
+    <!--文本域-->
+    <div class="row">
+        <div class="col-md-4">
+            <textarea class="form-control"></textarea>
+        </div>
+    </div>
+    <!--    复选框-->
+    <!--    垂直显示-->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="checkbox">
+                <label><input type="checkbox" name="hobby">唱歌</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="hobby">跳舞</label>
+            </div>
+        </div>
+    </div>
+    <!--水平显示-->
+    <div class="row">
+        <div class="col-md-4">
+            <label class="checkbox-inline"><input type="checkbox" name="hobby">唱歌</label>
+            <label class="checkbox-inline"><input type="checkbox" name="hobby">跳舞</label>
+        </div>
+    </div>
+</div>
+
+<!--    单选框-->
+<!--    垂直显示-->
+<div class="row">
+    <div class="col-md-4">
+        <div class="radio">
+            <label><input type="radio" name="hobby">唱歌</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="hobby">跳舞</label>
+        </div>
+    </div>
+</div>
+<!--水平显示-->
+<div class="row">
+    <div class="col-md-4">
+        <label class="radio-inline"><input type="radio" name="hobby">唱歌</label>
+        <label class="radio-inline"><input type="radio" name="hobby">跳舞</label>
+    </div>
+</div>
+
+</body>
+</html>

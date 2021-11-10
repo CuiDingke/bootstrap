@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>按钮</title>
+    <link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<!--
+    按钮
+        基础样式 .btn
+        附加样式 .btn-default   .btn-primary   .btn-success   .btn-info   .btn-warning   .btn-danger   .btn-link
+        尺寸    .btn-lg   .btn-sm   .btn-xs
+        状态    .active   真正禁用：disabled="disabled"   样式上禁用   .disable
+
+        {一定有  role="button"}
+-->
+
+<button>按钮</button>
+<input type="button" value="按钮">
+<hr>
+<!--按钮-->
+<button class="btn btn-info">一般信息</button>
+<button class="btn btn-default">默认样式</button>
+<button class="btn btn-primary">首选项</button>
+<button class="btn btn-success">成功</button>
+<button class="btn btn-warning">警告</button>
+<button class="btn btn-danger">危险</button>
+<button class="btn btn-link">链接</button>
+<hr>
+<!--通过设置其他元素为按钮效果-->
+<a href="" class="btn btn-info">a标签</a>
+<span class="btn btn-info">span标签</span>
+<div class="btn btn-info">div标签</div>
+<!--设置按钮大小-->
+<button class="btn btn-info">按钮</button>
+<button class="btn btn-default btn-lg">大按钮</button>
+<button class="btn btn-primary btn-sm">中按钮</button>
+<button class="btn btn-primary btn-xs">小按钮</button>
+<!--按钮的禁用-->
+<button class="btn btn-info" onclick="alert('HELLO');">激活按钮</button>
+<button class="btn btn-info" onclick="alert('HELLO');" disabled="disabled">禁用按钮</button>
+<button class="btn btn-info disabled" onclick="alert('HELLO');">禁用按钮</button>
+</body>
+</html>

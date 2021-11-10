@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模态框</title>
+    <!--    引入Bootstrap的核心css文件-->
+    <link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.min.css">
+    <!--    引入jQuery的核心Js文件，需要bootstrap的js之前引入-->
+    <script src="../static/js/jquery-3.6.0.js"></script>
+    <!--    引入Bootstrap的核心js文件-->
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>创建模态框（Modal）</h2>
+    <!-- 按钮触发模态框 -->
+    <!--    通过data属性-->
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">开始演示模态框</button>
+    <!--    通过JavaScript-->
+    <button class="btn btn-primary btn-lg" id="btn">开始演示模态框</button>
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">模态框（Modal）标题</h4>
+                </div>
+                <div class="modal-body">
+<!--                    按下ESC按钮退出。-->
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="uname" class="col-md-2 control-label">姓名</label>
+                            <div class="col-md-8">
+                                <input type="text" id="uname" class="form-control" placeholder="请输入姓名">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" id="submit_btn">提交更改</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+</div>
+<script>
+    $(function () {
+        $('#myModal').modal('hide')
+    });
+    $("#btn").click(function () {
+        $('#myModal').modal('toggle')
+    });
+</script>
+<script>
+    $(function () {
+        $('#myModal').on('hide.bs.modal',
+            function () {
+                alert('嘿，我听说您喜欢模态框...');
+            })
+    });
+</script>
+</body>
+</html>

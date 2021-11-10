@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>栅格网格系统</title>
+    <link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.min.css">
+    <style>
+        .row .col-md-4 {
+            background-color: #2aabd2;
+        }
+
+        .col-md-8 {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+<!--
+列组合
+    列总和小于等于12
+列偏移 col-md-offset-*
+    不能大于12
+列排序  col-md-push-*  col-md-pull-*
+列嵌套
+    -->
+<!--布局容器-->
+<div class="container">
+    <!--    行元素-->
+    <div class="row">
+        <!--        列元素   col-xs-数值   col-sm-数值   col-md-数值   col-lg-数值   -->
+        <div class="col-md-4 col-lg-4">4列</div>
+        <div class="col-md-8 col-lg-8">8列</div>
+    </div>
+    <hr>
+    <!--    列组合-->
+    <div class="row">
+        <div class="col-md-1" style="background-color: #4cae4c">1</div>
+        <div class="col-md-1" style="background-color: #d4d4d4">1</div>
+        <div class="col-md-1" style="background-color: #f0ad4e">1</div>
+        <div class="col-md-1" style="background-color: #ec971f">1</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6" style="background-color: #f2dede">6</div>
+        <div class="col-md-6" style="background-color: #d4d4d4">6</div>
+    </div>
+    <div class="row">
+        <div class="col-md-4" style="background-color: #a94442">4</div>
+        <div class="col-md-4" style="background-color: #f0ad4e">4</div>
+        <div class="col-md-4" style="background-color: #d4d4d4">4</div>
+    </div>
+    <!--列偏移-->
+    <div class="row">
+        <div class="col-md-1" style="background-color: #4cae4c">1</div>
+        <div class="col-md-1 col-md-offset-2" style="background-color: #d4d4d4">1</div>
+        <div class="col-md-1" style="background-color: #f0ad4e">1</div>
+        <div class="col-md-1" style="background-color: #ec971f">1</div>
+    </div>
+    <!--列排序-->
+    <div class="row">
+        <div class="col-md-1" style="background-color: bisque">1</div>
+        <div class="col-md-1 col-md-push-3" style="background-color: blue">1</div>
+        <div class="col-md-1" style="background-color: #f0ad4e">1</div>
+        <div class="col-md-1 col-md-pull-2" style="background-color: #ec971f">1</div>
+    </div>
+    <!--列嵌套-->
+    <div class="row">
+        <div class="col-md-6" style="background-color: bisque">
+            <div class="row">
+                <div class="col-md-6" style="background-color: #f2dede">6</div>
+                <div class="col-md-6" style="background-color: #d4d4d4">6</div>
+            </div>
+        </div>
+        <div class="col-md-6" style="background-color: #f0ad4e">1</div>
+
+    </div>
+</div>
+
+</body>
+</html>

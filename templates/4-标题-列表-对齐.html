@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常用样式</title>
+    <link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<!--
+        常用样式
+            1.标题
+                bootstrap对h1-h6的标题效果进行了覆盖
+                提供了对应的样式类型 为非表题元素设置样式
+            2.段落
+                class="lead"
+                <small>:小号字
+                <b><strong>:加粗
+                <i><em>:斜体
+            3.强调
+            4.对齐
+                .text-left:左对齐
+                .text-center:居中对齐
+                .text-right:右对齐
+                .text-justify:两端对齐
+            5.列表
+                有序列表 ul li
+                无序列表 ol li
+                去点列表 list-unstyled
+                内联列表 list-inline
+
+                定义列表 dl dt dd
+                自定义内联列表 dl-horizontal
+            -->
+<h1>标题1</h1>
+<h2>标题2<small>副标题</small></small></h2>
+<h3>标题3</h3>
+<div class="h1">类标题1</div>
+
+<hr>
+<p> bootstrap对h1-h6的标题效果进行了覆盖</p>
+<p class="lead"> bootstrap对h1-h6的<small>标题</small>效果进行了覆盖</p>
+
+
+<div class="text-muted">提示，浅灰色（#999）</div>
+<div class="text-primary">主要，蓝色（#428bca）</div>
+<div class="text-success">成功，浅绿色（#3c763d）</div>
+<div class="text-info">通知信息，浅蓝色（#31708f）</div>
+<div class="text-warning">警告，黄色（#8a6d3b）</div>
+<div class="text-danger">危险，褐色（#a94442）</div>
+
+<hr>
+<p class="text-left">左对齐</p>
+<p class="text-center">居中对齐</p>
+<p class="text-right">右对齐</p>
+<p class="text-justify">两端对齐</p>
+
+<ul>
+    <li>无序列表1</li>
+    <li>无序列表2</li>
+</ul>
+<ol>
+    <li>有序列表1</li>
+    <li>有序列表2</li>
+</ol>
+<dl>
+    <dt>定义列表1</dt>
+    <dd>qw</dd>
+    <dt>定义列表2</dt>
+    <dd>re</dd>
+</dl>
+<!--去点列表-->
+<ul class="list-unstyled">
+    <li>无序列表1</li>
+    <li>无序列表2</li>
+</ul>
+<!--内联列表-->
+<ul class="list-inline">
+    <li>无序列表1</li>
+    <li>无序列表2</li>
+</ul>
+
+<dl class="dl-horizontal">
+    <dt>定义列表1</dt>
+    <dd>qw</dd>
+    <dt>定义列表2</dt>
+    <dd>re</dd>
+</dl>
+</body>
+</html>
